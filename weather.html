@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="//db.onlinewebfonts.com/c/94d0c168186efde5fbe01b186e80e27e?family=Old+newspaper+font" rel="stylesheet" type="text/css"/> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="page_title" class="title">Ye Olde Weather</h1>
+            <form class="weather-form">
+                <div class="input-container">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input class="open-input" id="location" type="text" value="Los Angeles">  
+                </div>
+            </form>
+            <div class="unitBox">
+                <p>metric</p>
+                <label class="switch">
+                    <input id="metCheck" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+        <div id="result" class="res ripped-box invis">
+            <div id="lead">
+                <p id="city"></p>
+                <div id="picItem">
+                    <img id="weather_pic" />
+                </div>
+                <p class="measure" id="tempItem">Temp'rature: <span id="temperature"></span></p>
+                <p class="measure" id="feelItem">'T Doth Feel Liketh: <span id="feel"></span></p>
+                <p class="measure" id="minItem">Bitter Cold As't Gets: <span id="min"></span></p>
+                <p class="measure" id="maxItem">Warmeth As't Gets: <span id="max"></span></p>
+            </div>
+            <div id="wind">
+                <p class="measure">Thy Breeze Doth Blow At: <span id="wind_speed"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
